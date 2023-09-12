@@ -1,23 +1,20 @@
 #include <iostream>
 #include <cmath>
-
 #include <mbot_bridge/robot.h>
 #include <wall_follower/common/utils.h>
-
 
 int main(int argc, const char *argv[])
 {
     // Initialize the robot.
     mbot_bridge::MBot robot;
-
-    robot.drive(0.4, -0.4, 1.7);
-    sleepFor(5);
-    robot.drive(-0.4, 0.4, 1.7);
-    sleepFor(5);
-    robot.drive(-0.4, 0.4, 1.7);
-    sleepFor(5);
-    robot.drive(0.4, 0.4, 1.7);
-    sleepFor(5);
+   // robot.drive(4, 0.15, 90);
+    //sleepFor(5);
+    robot.drive(4, 0, 4.5);
+    sleepFor(7);
+    robot.drive(4, 0, 4.5);
+    sleepFor(7);
+    robot.drive(4, 0, 4.5);
+    sleepFor(7);
     /**
      * TODO: (P1.1) Write code to make the robot drive in a square. Then,
      * modify your code so that the robot drives in a square 3 times.
